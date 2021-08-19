@@ -6,15 +6,27 @@
 //
 
 import SwiftUI
+
+
+//struct MyButtonStyle: ButtonStyle {
+//   func makeBody(configuration: Configuration) -> some View {
+//      let pressed = configuration.isPressed
+//      return configuration.label
+//   }
+//
+//      Text(bleManager.buttonZeroState)
+//      Label("", systemImage:
+//               bleManager.buttonZeroisOn ? "circle" : "circle.fill" )
    
+//}
+
 
 struct ContentView: View {
    
    @ObservedObject var bleManager = BLEManager()
 
-   
-   
-   
+   //Commit this version
+  
     var body: some View {
       
 
@@ -134,7 +146,7 @@ struct ContentView: View {
                Text(" Data Out ")
                   .font(.title)
                   
-                     TextField("Enter Data Line", text: $bleManager.dataLine,  onEditingChanged:  { (changed) in print ("Entering Data to Send- changed? \(changed)" )
+               TextField("Enter Data Line", text: $bleManager.dataLine,  onEditingChanged:  { (changed) in print ("Entering Data to Send- changed? \(changed)" )
                  }) {
                //  print ("Dataline onCommit")
                  }
@@ -143,15 +155,23 @@ struct ContentView: View {
                   .background(Color .blue)
                   }//hstack
                    HStack {
-                      
-                   Text("Writing Data   ") //"guitars")
-                      
-                   Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                         Text(bleManager.buttonZeroState)
-                      Label("", systemImage:
-                          bleManager.buttonZeroisOn ? "circle" : "circle.fill" )
-                      }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 1)
-                   }.padding() // HStack But0
+                     
+                     Text("Writing Data   ") //"guitars")
+                       
+                       // MARK: - ** First button
+                     Button(action: {
+                        self.bleManager.startWriting()
+                   
+                     }){
+                        Text(bleManager.buttonZeroState)
+                        Label("", systemImage:
+                                 bleManager.buttonZeroisOn ? "circle" : "circle.fill" )
+                        
+                     }.padding(6.0)
+                     .border(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/, width: 1)
+                               
+
+                     }.padding() // HStack But0
              
                   }//Vstack
                   
@@ -174,12 +194,20 @@ struct ContentView: View {
                   
             HStack{
                 Text("Reading Data   " )
-
-               Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+               // MARK: - ** First button
+               Button(action: {
+                  self.bleManager.startReading()
+             
+               }){
                 Text(bleManager.buttonOneState)
                Label("", systemImage:
                     bleManager.buttonOneisOn ? "circle" : "circle.fill" )
-                }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 1)
+                
+                }.padding(6.0)
+             //  .background(bleManager.buttonOneisOn ? Color.gray : Color.white)
+               .border(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/, width: 1)
+               
+              
                 }.padding()  //HStack But1
          }//Vstack
                 Spacer()

@@ -12,7 +12,8 @@
 		573A4BD42541F442001431A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 573A4BD32541F442001431A7 /* Preview Assets.xcassets */; };
 		573A4BE12541F5EE001431A7 /* PeripheralsOZG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A4BE02541F5EE001431A7 /* PeripheralsOZG.swift */; };
 		573A4BEB25423798001431A7 /* OZGWProjectZeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A4BEA25423798001431A7 /* OZGWProjectZeroApp.swift */; };
-		5780EE88258970CF00C322C3 /* BLEManagerOGW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780EE87258970CF00C322C3 /* BLEManagerOGW.swift */; };
+		5770B79C2630CE56008B5FA4 /* BLEManagerOGW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770B79B2630CE55008B5FA4 /* BLEManagerOGW.swift */; };
+		57EE3BC926C1F5CB009AE7FD /* OGWBLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EE3BC826C1F5CB009AE7FD /* OGWBLE.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		573A4BD52541F442001431A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		573A4BE02541F5EE001431A7 /* PeripheralsOZG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralsOZG.swift; sourceTree = SOURCE_ROOT; };
 		573A4BEA25423798001431A7 /* OZGWProjectZeroApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OZGWProjectZeroApp.swift; sourceTree = SOURCE_ROOT; };
-		5780EE87258970CF00C322C3 /* BLEManagerOGW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLEManagerOGW.swift; path = ../../../../BLEManagerOGW.swift; sourceTree = "<group>"; };
+		5770B79B2630CE55008B5FA4 /* BLEManagerOGW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManagerOGW.swift; sourceTree = "<group>"; };
+		57EE3BC826C1F5CB009AE7FD /* OGWBLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OGWBLE.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,9 @@
 		573A4BDC2541F5A8001431A7 /* BlueTooth */ = {
 			isa = PBXGroup;
 			children = (
-				5780EE87258970CF00C322C3 /* BLEManagerOGW.swift */,
+				5770B79B2630CE55008B5FA4 /* BLEManagerOGW.swift */,
 				573A4BE02541F5EE001431A7 /* PeripheralsOZG.swift */,
+				57EE3BC826C1F5CB009AE7FD /* OGWBLE.swift */,
 			);
 			path = BlueTooth;
 			sourceTree = "<group>";
@@ -153,7 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				573A4BEB25423798001431A7 /* OZGWProjectZeroApp.swift in Sources */,
-				5780EE88258970CF00C322C3 /* BLEManagerOGW.swift in Sources */,
+				57EE3BC926C1F5CB009AE7FD /* OGWBLE.swift in Sources */,
+				5770B79C2630CE56008B5FA4 /* BLEManagerOGW.swift in Sources */,
 				573A4BCF2541F441001431A7 /* ContentView.swift in Sources */,
 				573A4BE12541F5EE001431A7 /* PeripheralsOZG.swift in Sources */,
 			);
@@ -288,7 +292,7 @@
 				DEVELOPMENT_TEAM = 9NGWNQGS6L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OZGWProjectZero/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +314,7 @@
 				DEVELOPMENT_TEAM = 9NGWNQGS6L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OZGWProjectZero/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
