@@ -79,8 +79,8 @@
 		573A4BDC2541F5A8001431A7 /* BlueTooth */ = {
 			isa = PBXGroup;
 			children = (
-				5770B79B2630CE55008B5FA4 /* BLEManagerOGW.swift */,
 				573A4BE02541F5EE001431A7 /* PeripheralsOZG.swift */,
+				5770B79B2630CE55008B5FA4 /* BLEManagerOGW.swift */,
 				57EE3BC826C1F5CB009AE7FD /* OGWBLE.swift */,
 			);
 			path = BlueTooth;
@@ -292,7 +292,7 @@
 				DEVELOPMENT_TEAM = 9NGWNQGS6L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OZGWProjectZero/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +314,7 @@
 				DEVELOPMENT_TEAM = 9NGWNQGS6L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OZGWProjectZero/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
